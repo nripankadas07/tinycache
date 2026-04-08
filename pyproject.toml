@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinycache"
+version = "0.1.0"
+description = "Thread-safe LRU + TTL cache decorator."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nripanka Das", email = "nripankadas@gmail.com" }]
+keywords = ["cache", "lru", "ttl", "thread-safe", "decorator", "utility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/tinycache"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
