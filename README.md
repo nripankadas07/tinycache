@@ -11,7 +11,7 @@ a configurable time-to-live.
 ## Install
 
 ```bash
-pip install tinycache
+python -m pip install -e .
 ```
 
 Or from source:
