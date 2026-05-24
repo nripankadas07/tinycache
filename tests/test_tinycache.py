@@ -3,7 +3,6 @@
 Naming convention: test_[unit]_[scenario]_[expected_result]
 """
 import threading
-import time
 
 import pytest
 
@@ -115,7 +114,7 @@ def test_tinycache_cache_clear_resets_state() -> None:
     compute(1)
     assert call_count == 2
 
-    info = identity_after_clear = compute.cache_info()
+    info = compute.cache_info()
     assert info.hits == 0
     assert info.currsize == 1
 
